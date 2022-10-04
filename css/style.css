@@ -1,0 +1,255 @@
+/*Generales*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+/*---Botones---*/
+.btn{
+    text-decoration: none;
+    background-color:#2B303A;
+    padding: 5px;
+    margin: 25px;
+    color:whitesmoke
+}
+
+
+
+
+/*----Header----*/
+.header_site{
+    
+    background-color:#e86e01 ;
+    position: sticky fixed;
+    text-align: center;
+    
+    
+    
+}
+
+
+.menu ul{
+    list-style: none;
+
+}
+.menu ul li{
+    display: inline;
+    padding: 20px;
+    margin: 5px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #0d1b38;
+    font-size: 20px;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+/*---Main---*/
+.banner{
+ background-image: url("../images/pexels-hector-perez-5542897.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    
+    margin-bottom: 30px;
+    
+}
+
+/*--promos--*/
+.hero{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hero h2{
+    font-size: 2rem;
+
+}
+.card__promo__contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+    
+}
+.card__promo__contenedor .card__promo{
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 450px;
+    height: 220px;
+    
+}
+.card__promo__img{
+    width: 225px;
+    height: 100%;
+    
+}
+
+.card__promo__img img{
+    width: 225px
+}
+.card__promo__contenedor__descripcion{
+    
+    width: 50%;
+    height: 100%;   
+}
+
+/*destinos*/
+.destinos{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.destinos h2{
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+.destinos .contenedor__destinos{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contenedor__destinos div a img{
+    width: 450px;
+    height: 600px;
+    opacity: 0.6;
+}
+
+/*Informacion*/
+
+.informacion{
+    text-align: center;
+    
+    
+}
+.informacion .informacion__contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacion h2{
+    margin-bottom: 30px;
+    font-size: 2rem;
+
+}
+
+.informacion .informacion__contenedor div{
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 25px;
+    padding: 10px;
+    
+}
+
+.informacion div h3{
+    margin: 20px;
+
+}
+/*--nosotros--*/
+.somos{
+    text-align: center;
+}
+
+/*--- formulario Contacto---*/
+.background_form {
+    background-image: url("../images/fondo_formualrio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 700px;
+    padding: 50px;
+
+}
+.contenedor__formulario{
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    
+    margin-bottom: 100px;
+    background-color:#D81159;
+    border-radius:4px ;
+
+
+}
+
+.contenedor__formulario h2{
+  text-align: center;
+  padding: 15px;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px
+
+}
+
+
+/*Footer*/
+
+.footer_site {
+    background-color:#00CECB ;
+    text-align: center;
+    width: 100%;
+    
+    
+    
+}
+.footer_site{
+    text-align: center;
+    display: flex;
+}
+.footer_site .redes{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 100px;
+    padding: 30px 10px 30px 10px;
+}
+
+
+.footer_site div ul{
+    list-style: none;
+}
+
+.footer_site div ul li {
+    display: inline;
+    text-decoration: none;
+    
+    
+}
+
+.footer_site div ul li a img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer_site .direccion p {
+    padding: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer_site .direccion p a{
+    text-decoration: none;
+    color: white;
+}
