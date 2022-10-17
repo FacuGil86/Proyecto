@@ -8,6 +8,7 @@
 }
 
 body {
+  margin: 0 auto;
   overflow-x: hidden;
   font-family: "Baloo 2", cursive;
 }
