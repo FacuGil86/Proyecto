@@ -8,7 +8,7 @@
 }
 
 body {
-  margin: 0 auto;
+  align-items: center;
   overflow-x: hidden;
   font-family: "Baloo 2", cursive;
 }
@@ -30,6 +30,9 @@ body {
   margin-bottom: 10px;
 }
 
+.dropdown{
+  display: none;
+}
 .menu ul {
   list-style: none;
 }
@@ -147,7 +150,7 @@ body {
   text-align: center;
 }
 
-.informacion .informacion__contenedor {
+.informacion__contenedor {
   display: flex;
   justify-content: space-around;
 }
@@ -159,10 +162,11 @@ body {
 
 .informacion .informacion__contenedor div {
   border: 1px solid black;
-  width: 400px;
+  width: 350px;
   height: 300px;
   margin-bottom: 25px;
   padding: 10px;
+  overflow: hidden;
 }
 
 .informacion div h3 {
@@ -172,8 +176,21 @@ body {
 /*--nosotros--*/
 .somos {
   text-align: center;
+  
 }
-
+.somos__contenido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.somos__contenido div h2{
+  margin: 25px 0;
+}
+.somos div img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 /*--- formulario Contacto---*/
 
 
@@ -274,4 +291,53 @@ body {
 
 .copy p{
   margin: 15px;
+}
+
+
+/*---media queries--*/
+
+@media screen and (max-width: 768px) {
+  .header_site {
+  background-color: #e86e01;
+  position:  relative;
+  text-align: center;
+  
+  margin-bottom: 10px;
+  width: auto;
+}
+  .header_site div img{
+    width: 100%;
+    height: auto;
+  }
+
+.menu{
+  display: none;
+}
+
+.dropdown{
+  text-align: left;
+  display: block;
+  margin: 5px;
+}
+.card__promo__contenedor {
+ flex-direction: column;
+
+}
+.card__promo{
+  margin: 5px;
+
+}
+.destinos .contenedor__destinos {
+  
+  flex-direction: column;
+ 
+  
+}
+.contenedor__destinos div{
+  margin: 5px;
+}
+
+.informacion__contenedor{
+  flex-direction: column;
+}
 }
