@@ -5,59 +5,62 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Baloo 2', sans-serif;
 }
 
-body {
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  font-family: "Baloo 2", cursive;
+
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem; /** = 1200px; **/
+  margin: 0 auto;
 }
 
 /*---Botones---*/
-.btn{
+.btn {
   text-decoration: none;
   background-color: #2b303a;
   padding: 5px;
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 /*----Header----*/
 .header_site {
   background-color: #e86e01;
-  position:  sticky relative;
+  position: sticky relative;
   text-align: center;
   overflow: hidden;
-  margin-bottom: 10px;
+  padding: 1rem 0 1rem 0;
 }
 .logo {
   background-image: url("../images/Logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   padding: 05em;
-  
-
 }
 
 .navbar-nav li a {
   text-decoration: none;
   color: #0d1b38;
+  font-weight: bold;
   font-size: 20px;
   font-family: "Baloo 2", cursive;
 }
 
-
-
 /*---Main---*/
 .banner {
-  margin:10 0 30px;
+  margin: 10 0 30px;
 }
-.carousel-item{
+.carousel-item {
   height: 200px;
   width: 100%;
 }
 
-.carousel-item img{
+.carousel-item img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -109,7 +112,7 @@ body {
   font-size: 1.5rem;
   color: #888888;
 }
-.card__promo__contenedor__descripcion .btn{
+.card__promo__contenedor__descripcion .btn {
   margin: 5px;
 }
 
@@ -167,14 +170,13 @@ body {
 /*--nosotros--*/
 .somos {
   text-align: center;
-  
 }
-.somos__contenido{
+.somos__contenido {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.somos__contenido div h2{
+.somos__contenido div h2 {
   margin: 25px 0;
 }
 .somos div img {
@@ -184,24 +186,23 @@ body {
 }
 /*--- formulario Contacto---*/
 
-
-.background_form{
+.background_form {
   position: relative;
-  width: 100%;
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
   overflow: hidden;
+  width: 97%;
+  
 }
 
-
-
 .contenedor__formulario {
-  width: 400px;
-  padding: 30px;
-  margin: 100px;
-  background-color: rgb(216, 17, 89,0.5);
+  width: 50%;
+  margin: 2rem 0;
+  padding: 2rem 1rem ;
+  background-color: rgb(216, 17, 89, 0.5);
   border-radius: 4px;
   z-index: 1;
 }
@@ -209,6 +210,8 @@ body {
 .contenedor__formulario h2 {
   text-align: center;
   padding: 15px;
+  color: whitesmoke;
+  font-size: bold;
 }
 
 .input {
@@ -219,12 +222,13 @@ body {
   border: 1px;
 }
 
-.contenedor__video{
+
+
+.contenedor__video {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  left: 35px;
+  
 }
 
 
@@ -236,22 +240,20 @@ body {
   width: 100%;
   margin-top: 10px;
   padding: 20px;
-  
 }
 
 .direccion ul {
   list-style: none;
   text-align: left;
   font-size: 15px;
-  
 }
 
-.direccion ul li a{
+.direccion ul li a {
   color: black;
   font-weight: bold;
 }
 
-.acerca ul{
+.acerca ul {
   list-style: none;
   margin: 5px;
   padding: 0;
@@ -262,73 +264,66 @@ body {
   padding: 2px;
 }
 
-.acerca ul li a img{
+.acerca ul li a img {
   width: 20px;
 }
 
-.destinos__footer ul{
+.destinos__footer ul {
   list-style: none;
-  
 }
 
-.destinos__footer ul li a{
+.destinos__footer ul li a {
   text-decoration: none;
   color: black;
 }
 
-.copy{
+.copy {
   align-items: center;
 }
 
-.copy p{
+.copy p {
   margin: 15px;
 }
-
 
 /*---media queries--*/
 
 @media screen and (max-width: 768px) {
   .header_site {
-  background-color: #e86e01;
-  position:  relative;
-  text-align: center;
-  
-  margin-bottom: 10px;
-  width: auto;
-}
-  .header_site div img{
+    background-color: #e86e01;
+    position: relative;
+    text-align: center;
+
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .header_site div img {
     width: 100%;
     height: auto;
   }
 
-.menu{
-  display: none;
-}
+  .menu {
+    display: none;
+  }
 
-.dropdown{
-  text-align: left;
-  display: block;
-  margin: 5px;
-}
-.card__promo__contenedor {
- flex-direction: column;
+  .dropdown {
+    text-align: left;
+    display: block;
+    margin: 5px;
+  }
+  .card__promo__contenedor {
+    flex-direction: column;
+  }
+  .card__promo {
+    margin: 5px;
+  }
+  .destinos .contenedor__destinos {
+    flex-direction: column;
+  }
+  .contenedor__destinos div {
+    margin: 5px;
+  }
 
-}
-.card__promo{
-  margin: 5px;
-
-}
-.destinos .contenedor__destinos {
-  
-  flex-direction: column;
- 
-  
-}
-.contenedor__destinos div{
-  margin: 5px;
-}
-
-.informacion__contenedor{
-  flex-direction: column;
-}
+  .informacion__contenedor {
+    flex-direction: column;
+  }
 }
