@@ -8,6 +8,7 @@
 }
 
 body {
+  justify-content: center;
   align-items: center;
   overflow-x: hidden;
   font-family: "Baloo 2", cursive;
@@ -29,33 +30,23 @@ body {
   overflow: hidden;
   margin-bottom: 10px;
 }
+.logo {
+  background-image: url("../images/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 05em;
+  
 
-.dropdown{
-  display: none;
-}
-.menu ul {
-  list-style: none;
-}
-
-.menu ul li {
-  display: inline;
-  padding: 20px;
-  margin: 5px;
 }
 
-.menu ul li a {
+.navbar-nav li a {
   text-decoration: none;
   color: #0d1b38;
   font-size: 20px;
   font-family: "Baloo 2", cursive;
 }
 
-.menu ul li a:hover {
-  background-color: black;
-  color: aliceblue;
-  padding: 10px;
-  border-radius: 5px;
-}
+
 
 /*---Main---*/
 .banner {
