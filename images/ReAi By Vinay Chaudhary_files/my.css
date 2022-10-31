@@ -1,0 +1,27 @@
+.aibox{
+
+	background-color: white;
+	color: black;
+	height: 26rem;
+	width: 34rem;
+	padding: 1rem;
+	border-radius: 8px;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+.aibox{
+	background-color: white;
+	color: black;
+	height: 20rem;
+	width: 20rem;
+	padding: 1rem;
+	border-radius: 8px;
+	overflow-y: auto;
+}
+.mobpic{
+	height: 10rem;
+	width: 10rem;
+}
+  
+}
