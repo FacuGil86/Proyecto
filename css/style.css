@@ -73,14 +73,16 @@ img {
   margin-bottom: 30px;
 }
 
-.hero h2 {
-  font-size: 2rem;
+.hero h1 {
+  font-size: 4rem;
+  margin: 2rem;
 }
 
 .card__promo__contenedor {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .card__promo__contenedor .card__promo {
