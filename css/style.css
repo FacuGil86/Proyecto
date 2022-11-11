@@ -37,6 +37,7 @@ img {
   text-align: center;
   overflow: hidden;
   padding: 1rem 0 1rem 0;
+  margin-bottom: 10px;
 }
 
 .logo {
@@ -51,7 +52,7 @@ img {
   
 }
 .navbar-brand img{
-  height: 150px;
+ height: 150px;
 }
 
 .navbar-nav li a {
@@ -305,7 +306,6 @@ img {
   background-color: #e86e01;
   position:  relative;
   text-align: center;
-  
   margin-bottom: 10px;
   width: auto;
 }
