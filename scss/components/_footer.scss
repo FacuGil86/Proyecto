@@ -1,0 +1,45 @@
+/*--Footer--*/
+
+.footer_site {
+  background-color: #00cecb;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  .direccion ul {
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    li a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+  .acerca ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    li {
+      display: inline;
+      padding: 2px;
+      a img {
+        width: 20px;
+      }
+    }
+  }
+  .destinos__footer ul {
+    list-style: none;
+    li a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .copy {
+    align-items: center;
+
+    p {
+      margin: 15px;
+    }
+  }
+}

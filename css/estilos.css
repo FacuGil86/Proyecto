@@ -1,3 +1,30 @@
+/*Generales*/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem; /** = 1200px; **/
+  margin: 0 auto;
+}
+
+/*---Botones---*/
+.btn {
+  text-decoration: none;
+  background-color: #2b303a;
+  padding: 5px;
+  color: whitesmoke;
+}
+
 /*----header----*/
 .header_site {
   background-color: #e86e01;
@@ -7,6 +34,242 @@
   overflow: hidden;
   margin-bottom: 10px;
 }
-.header_site .menu ul {
+.header_site .logo {
+  background-image: url("../images/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 5em;
+}
+.header_site .navbar-nav li a {
+  text-decoration: none;
+  color: #0d1b38;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Baloo 2", cursive;
+}
+
+/*--Main--*/
+.banner {
+  margin: 1rem 2rem;
+}
+.banner .carousel-item {
+  height: 200px;
+  width: 100%;
+}
+.banner .carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*--promos--*/
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero h1 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+.hero .card__promo__contenedor {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+}
+.hero .card__promo__contenedor .card__promo {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 450px;
+  height: auto;
+}
+.hero .card__promo__contenedor .card__promo .card__promo__img {
+  width: 225px;
+  height: 100%;
+}
+.hero .card__promo__contenedor .card__promo .card__promo__img img {
+  width: 100%;
+}
+.hero .card__promo__contenedor .card__promo .card__promo__contenedor__descripcion {
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+}
+.hero .card__promo__contenedor .card__promo .card__promo__contenedor__descripcion .card__descripcion p {
+  font-size: 1.5rem;
+  color: #888888;
+}
+.hero .card__promo__contenedor .card__promo .card__promo__contenedor__descripcion .btn {
+  margin: 5px;
+}
+
+/*--destinos--*/
+.destinos {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.destinos h2 {
+  font-size: 3rem;
+  padding: 20px;
+}
+.destinos .contenedor__destinos {
+  display: flex;
+  justify-content: space-between;
+}
+.destinos .contenedor__destinos .destino_argentina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/Argentina-patagonia.jpg") no-repeat center center;
+  background-size: cover;
+}
+.destinos .contenedor__destinos .destino_argentina .titulo_destino {
+  padding: 0 1rem;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+.destinos .contenedor__destinos .destino_europa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/torre-eifell.jpg") no-repeat center center;
+  background-size: cover;
+}
+.destinos .contenedor__destinos .destino_europa .titulo_destino {
+  padding: 0 1rem;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+.destinos .contenedor__destinos .destino_eeuu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/miami.jpg") no-repeat center center;
+  background-size: cover;
+}
+.destinos .contenedor__destinos .destino_eeuu .titulo_destino {
+  padding: 0 1rem;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+.destinos .contenedor__destinos .destino_caribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/cancun.jpg") no-repeat center center;
+  background-size: cover;
+}
+.destinos .contenedor__destinos .destino_caribe .titulo_destino {
+  padding: 0 1rem;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+/*--informacion--*/
+.informacion {
+  text-align: center;
+}
+.informacion .informacion__contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+.informacion .informacion__contenedor div {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 0rem 1rem;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+.informacion .informacion__contenedor div h3 {
+  font-weight: bold;
+  margin: 20px;
+}
+.informacion h2 {
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+/*nosotros*/
+.somos {
+  text-align: center;
+}
+.somos .somos__contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.somos .somos__contenido div h2 {
+  margin: 25px 0;
+}
+.somos .somos__contenido div img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/*--Footer--*/
+.footer_site {
+  background-color: #00cecb;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+}
+.footer_site .direccion ul {
   list-style: none;
+  text-align: left;
+  font-size: 15px;
+}
+.footer_site .direccion ul li a {
+  color: black;
+  font-weight: bold;
+}
+.footer_site .acerca ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+.footer_site .acerca ul li {
+  display: inline;
+  padding: 2px;
+}
+.footer_site .acerca ul li a img {
+  width: 20px;
+}
+.footer_site .destinos__footer ul {
+  list-style: none;
+}
+.footer_site .destinos__footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer_site .copy {
+  align-items: center;
+}
+.footer_site .copy p {
+  margin: 15px;
 }/*# sourceMappingURL=estilos.css.map */
