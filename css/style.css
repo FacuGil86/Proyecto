@@ -28,6 +28,8 @@ img {
   color: whitesmoke;
 }
 
+
+
 /*----Header----*/
 .header_site {
   background-color: #e86e01;
@@ -36,11 +38,20 @@ img {
   overflow: hidden;
   padding: 1rem 0 1rem 0;
 }
+
 .logo {
   background-image: url("../images/Logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   padding: 05em;
+}
+.navbar-brand{
+  display: none;
+  
+  
+}
+.navbar-brand img{
+  height: 150px;
 }
 
 .navbar-nav li a {
@@ -291,39 +302,41 @@ img {
 
 @media screen and (max-width: 768px) {
   .header_site {
-    background-color: #e86e01;
-    position: relative;
-    text-align: center;
+  background-color: #e86e01;
+  position:  relative;
+  text-align: center;
+  
+  margin-bottom: 10px;
+  width: auto;
+}
+.navbar-brand{
+  display: inline;
+}
+.logo {
+ display: none;
+  
+}
 
-    margin-bottom: 10px;
-    width: auto;
-  }
-  .header_site div img {
-    width: 100%;
-    height: auto;
-  }
 
-  .menu {
-    display: none;
-  }
 
-  .dropdown {
-    text-align: left;
-    display: block;
-    margin: 5px;
-  }
-  .card__promo__contenedor {
-    flex-direction: column;
-  }
-  .card__promo {
-    margin: 5px;
-  }
-  .destinos .contenedor__destinos {
-    flex-direction: column;
-  }
-  .contenedor__destinos div {
-    margin: 5px;
-  }
+
+.card__promo__contenedor {
+ flex-direction: column;
+
+}
+.card__promo{
+  margin: 5px;
+
+}
+.destinos .contenedor__destinos {
+  
+  flex-direction: column;
+ 
+  
+}
+.contenedor__destinos div{
+  margin: 5px;
+}
 
   .informacion__contenedor {
     flex-direction: column;
