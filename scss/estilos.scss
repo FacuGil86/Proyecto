@@ -1,11 +1,12 @@
-
-@import "../scss/base/generales";
-@import"./components/header";
-
+@import "./base/generales";
+@import "./components/header";
+@import "./components/footer";
+@import "./base/mediaQuerys";
 
 /*--Main--*/
 
 .banner {
+  align-items: center;
   margin: 1rem 2rem;
   .carousel-item {
     height: 200px;
@@ -189,48 +190,42 @@
   }
 }
 
-/*--Footer--*/
+/*--- formulario Contacto---*/
 
-.footer_site {
-  background-color: #00cecb;
-  text-align: center;
-  align-content: center;
-  width: 100%;
-  margin-top: 10px;
-  padding: 20px;
-  .direccion ul {
-    list-style: none;
-    text-align: left;
-    font-size: 15px;
-    li a {
-      color: black;
-      font-weight: bold;
+.background_form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  overflow: hidden;
+  width: 97%;
+  .contenedor__formulario {
+    width: 50%;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    background-color: rgb(216, 17, 89, 0.5);
+    border-radius: 4px;
+    z-index: 1;
+    h2 {
+      text-align: center;
+      padding: 15px;
+      color: whitesmoke;
+      font-size: bold;
     }
-  }
-  .acerca ul {
-    list-style: none;
-    margin: 5px;
-    padding: 0;
-    li {
-      display: inline;
-      padding: 2px;
-      a img {
-        width: 20px;
-      }
-    }
-  }
-  .destinos__footer ul {
-    list-style: none;
-    li a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-  .copy {
-    align-items: center;
 
-    p {
-      margin: 15px;
+    .input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px;
     }
+  }
+  .contenedor__video {
+    position: absolute;
+    top: 0;
+    left: 35px;
   }
 }

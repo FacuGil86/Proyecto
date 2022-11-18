@@ -4,13 +4,13 @@
   background-color: #00cecb;
   text-align: center;
   align-content: center;
-  width: 100%;
+  
   margin-top: 10px;
   padding: 20px;
   .direccion ul {
     list-style: none;
-    text-align: left;
     font-size: 15px;
+    padding: 0;
     li a {
       color: black;
       font-weight: bold;
@@ -29,6 +29,7 @@
     }
   }
   .destinos__footer ul {
+    padding: 0;
     list-style: none;
     li a {
       text-decoration: none;

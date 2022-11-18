@@ -40,6 +40,12 @@ img {
   background-position: center center;
   padding: 5em;
 }
+.header_site .navbar-brand {
+  display: none;
+}
+.header_site .navbar-brand img {
+  height: 150px;
+}
 .header_site .navbar-nav li a {
   text-decoration: none;
   color: #0d1b38;
@@ -48,8 +54,86 @@ img {
   font-family: "Baloo 2", cursive;
 }
 
+/*--Footer--*/
+.footer_site {
+  background-color: #00cecb;
+  text-align: center;
+  align-content: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+.footer_site .direccion ul {
+  list-style: none;
+  font-size: 15px;
+  padding: 0;
+}
+.footer_site .direccion ul li a {
+  color: black;
+  font-weight: bold;
+}
+.footer_site .acerca ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+.footer_site .acerca ul li {
+  display: inline;
+  padding: 2px;
+}
+.footer_site .acerca ul li a img {
+  width: 20px;
+}
+.footer_site .destinos__footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer_site .destinos__footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer_site .copy {
+  align-items: center;
+}
+.footer_site .copy p {
+  margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .header_site {
+    background-color: #e86e01;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .header_site .navbar-brand {
+    display: inline;
+  }
+  .header_site .logo {
+    display: none;
+  }
+  .card__promo__contenedor {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .card__promo {
+    margin: 5px;
+    width: auto;
+  }
+  .destinos .contenedor__destinos {
+    flex-direction: column;
+  }
+  .contenedor__destinos div {
+    margin: 5px;
+  }
+  .informacion__contenedor {
+    flex-direction: column;
+  }
+}
 /*--Main--*/
 .banner {
+  align-items: center;
   margin: 1rem 2rem;
 }
 .banner .carousel-item {
@@ -230,46 +314,40 @@ img {
   border-radius: 5px;
 }
 
-/*--Footer--*/
-.footer_site {
-  background-color: #00cecb;
-  text-align: center;
-  align-content: center;
-  width: 100%;
-  margin-top: 10px;
-  padding: 20px;
-}
-.footer_site .direccion ul {
-  list-style: none;
-  text-align: left;
-  font-size: 15px;
-}
-.footer_site .direccion ul li a {
-  color: black;
-  font-weight: bold;
-}
-.footer_site .acerca ul {
-  list-style: none;
-  margin: 5px;
-  padding: 0;
-}
-.footer_site .acerca ul li {
-  display: inline;
-  padding: 2px;
-}
-.footer_site .acerca ul li a img {
-  width: 20px;
-}
-.footer_site .destinos__footer ul {
-  list-style: none;
-}
-.footer_site .destinos__footer ul li a {
-  text-decoration: none;
-  color: black;
-}
-.footer_site .copy {
+/*--- formulario Contacto---*/
+.background_form {
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  overflow: hidden;
+  width: 97%;
 }
-.footer_site .copy p {
-  margin: 15px;
+.background_form .contenedor__formulario {
+  width: 50%;
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  background-color: rgba(216, 17, 89, 0.5);
+  border-radius: 4px;
+  z-index: 1;
+}
+.background_form .contenedor__formulario h2 {
+  text-align: center;
+  padding: 15px;
+  color: whitesmoke;
+  font-size: bold;
+}
+.background_form .contenedor__formulario .input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px;
+}
+.background_form .contenedor__video {
+  position: absolute;
+  top: 0;
+  left: 35px;
 }/*# sourceMappingURL=estilos.css.map */
