@@ -1,0 +1,165 @@
+.banner {
+  align-items: center;
+  margin: 1rem 2rem;
+  .carousel-item {
+    height: 200px;
+    width: 100%;
+  }
+  .carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*--promos--*/
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+  h1 {
+    font-size: 4rem;
+    margin: 2rem;
+  }
+  .card__promo__contenedor {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    .card__promo {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      border-radius: 5px;
+      border: 1px solid black;
+      width: 450px;
+      height: auto;
+      .card__promo__img {
+        width: 225px;
+        height: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .card__promo__contenedor__descripcion {
+        padding: 10px;
+        width: 50%;
+        height: 100%;
+        .card__descripcion p {
+          font-size: 1.5rem;
+          color: #888888;
+        }
+        .btn {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+/*--destinos--*/
+.destinos {
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    font-size: 3rem;
+    padding: 20px;
+  }
+  .contenedor__destinos {
+    display: flex;
+    justify-content: space-between;
+    .destino_argentina {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      margin: 1rem;
+      text-decoration: none;
+      background: url("../images/Argentina-patagonia.jpg") no-repeat center
+        center;
+      background-size: cover;
+      .titulo_destino {
+        padding: 0 1rem;
+        font-size: 4rem;
+        color: whitesmoke;
+      }
+    }
+
+    .destino_europa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      margin: 1rem;
+      text-decoration: none;
+      background: url("../images/torre-eifell.jpg") no-repeat center center;
+      background-size: cover;
+      .titulo_destino {
+        padding: 0 1rem;
+        font-size: 4rem;
+        color: whitesmoke;
+      }
+    }
+
+    .destino_eeuu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      margin: 1rem;
+      text-decoration: none;
+      background: url("../images/miami.jpg") no-repeat center center;
+      background-size: cover;
+      .titulo_destino {
+        padding: 0 1rem;
+        font-size: 4rem;
+        color: whitesmoke;
+      }
+    }
+    .destino_caribe {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      margin: 1rem;
+      text-decoration: none;
+      background: url("../images/cancun.jpg") no-repeat center center;
+      background-size: cover;
+      .titulo_destino {
+        padding: 0 1rem;
+        font-size: 4rem;
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+/*--informacion--*/
+.informacion {
+  text-align: center;
+  .informacion__contenedor {
+    display: flex;
+    justify-content: space-around;
+    div {
+      border: 1px solid black;
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      margin: 0rem 1rem;
+      overflow: hidden;
+      text-align: center;
+      justify-content: center;
+      h3 {
+        font-weight: bold;
+        margin: 20px;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+  }
+}

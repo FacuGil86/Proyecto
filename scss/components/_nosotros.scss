@@ -1,0 +1,18 @@
+/*nosotros*/
+
+.somos {
+  text-align: center;
+  .somos__contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div h2 {
+      margin: 25px 0;
+    }
+    div img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+}

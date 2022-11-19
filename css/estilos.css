@@ -54,84 +54,6 @@ img {
   font-family: "Baloo 2", cursive;
 }
 
-/*--Footer--*/
-.footer_site {
-  background-color: #00cecb;
-  text-align: center;
-  align-content: center;
-  margin-top: 10px;
-  padding: 20px;
-}
-.footer_site .direccion ul {
-  list-style: none;
-  font-size: 15px;
-  padding: 0;
-}
-.footer_site .direccion ul li a {
-  color: black;
-  font-weight: bold;
-}
-.footer_site .acerca ul {
-  list-style: none;
-  margin: 5px;
-  padding: 0;
-}
-.footer_site .acerca ul li {
-  display: inline;
-  padding: 2px;
-}
-.footer_site .acerca ul li a img {
-  width: 20px;
-}
-.footer_site .destinos__footer ul {
-  padding: 0;
-  list-style: none;
-}
-.footer_site .destinos__footer ul li a {
-  text-decoration: none;
-  color: black;
-}
-.footer_site .copy {
-  align-items: center;
-}
-.footer_site .copy p {
-  margin: 15px;
-}
-
-@media screen and (max-width: 768px) {
-  .header_site {
-    background-color: #e86e01;
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-    width: auto;
-  }
-  .header_site .navbar-brand {
-    display: inline;
-  }
-  .header_site .logo {
-    display: none;
-  }
-  .card__promo__contenedor {
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
-  .card__promo {
-    margin: 5px;
-    width: auto;
-  }
-  .destinos .contenedor__destinos {
-    flex-direction: column;
-  }
-  .contenedor__destinos div {
-    margin: 5px;
-  }
-  .informacion__contenedor {
-    flex-direction: column;
-  }
-}
-/*--Main--*/
 .banner {
   align-items: center;
   margin: 1rem 2rem;
@@ -350,4 +272,82 @@ img {
   position: absolute;
   top: 0;
   left: 35px;
+}
+
+/*--Footer--*/
+.footer_site {
+  background-color: #00cecb;
+  text-align: center;
+  align-content: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+.footer_site .direccion ul {
+  list-style: none;
+  font-size: 15px;
+  padding: 0;
+}
+.footer_site .direccion ul li a {
+  color: black;
+  font-weight: bold;
+}
+.footer_site .acerca ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+.footer_site .acerca ul li {
+  display: inline;
+  padding: 2px;
+}
+.footer_site .acerca ul li a img {
+  width: 20px;
+}
+.footer_site .destinos__footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer_site .destinos__footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer_site .copy {
+  align-items: center;
+}
+.footer_site .copy p {
+  margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .header_site {
+    background-color: #e86e01;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .header_site .navbar-brand {
+    display: inline;
+  }
+  .header_site .logo {
+    display: none;
+  }
+  .card__promo__contenedor {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .card__promo {
+    margin: 5px;
+    width: auto;
+  }
+  .destinos .contenedor__destinos {
+    flex-direction: column;
+  }
+  .contenedor__destinos div {
+    margin: 5px;
+  }
+  .informacion__contenedor {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=estilos.css.map */
