@@ -1,0 +1,30 @@
+main{
+    h2{
+        font-size: 4rem;
+    }
+}
+.imagen_destino{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+.parrafos_destinos{
+    max-width: 80%;
+    margin: auto;
+    font-size: 1.8rem;
+    text-align: justify;
+    .descripcion_destino{
+        font-weight: 300;
+        line-height: 4rem;
+        font-size: 2rem;
+        color: #999;
+    }
+}

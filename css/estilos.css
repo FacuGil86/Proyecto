@@ -218,6 +218,35 @@ img {
   font-size: 3rem;
 }
 
+main h2 {
+  font-size: 4rem;
+}
+
+.imagen_destino {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.imagen_destino img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.parrafos_destinos {
+  max-width: 80%;
+  margin: auto;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.parrafos_destinos .descripcion_destino {
+  font-weight: 300;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #999;
+}
+
 /*nosotros*/
 .somos {
   text-align: center;
