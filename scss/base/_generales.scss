@@ -1,0 +1,27 @@
+/*Generales*/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem; /** = 1200px; **/
+  margin: 0 auto;
+}
+
+/*---Botones---*/
+.btn {
+  text-decoration: none;
+  background-color: #2b303a;
+  padding: 5px;
+  color: whitesmoke;
+}

@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+  .header_site {
+    background-color: #e86e01;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    width: auto;
+    
+    .navbar-brand{
+  display: inline;
+}
+.logo {
+ display: none;
+  
+}
+  }
+ 
+
+
+ 
+
+  .card__promo__contenedor {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .card__promo {
+    margin: 5px;
+    width: auto;
+  }
+
+  .destinos .contenedor__destinos {
+    flex-direction: column;
+  }
+  .contenedor__destinos div {
+    margin: 5px;
+  }
+
+  .informacion__contenedor {
+    flex-direction: column;
+  }
+}

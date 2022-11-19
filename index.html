@@ -8,14 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
 
     <title>Taxidevo Viajes 🌐</title>
 </head>
 
 <body>
-    <header class="header_site">
+    <header class="header_site contenedor">
         <div class="logo"></div>
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid ">
@@ -27,7 +27,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class=" collapse navbar-collapse  justify-content-md-around 
-                " id="menu">
+                    " id="menu">
                     <ul class="navbar-nav ">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/promos.html">Promos</a></li>
@@ -35,19 +35,19 @@
                         <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
                     </ul>
-
+    
                 </div>
             </div>
-
+    
         </nav>
-
-
+    
+    
     </header>
 
     <main>
-        <section class="banner contenedor">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+        <section class="banner contenedor ">
+            <div id="carouselExampleSlidesOnly " class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner align-items-center">
                     <div class="carousel-item active">
                         <img src="./images/pexels-hector-perez-5542897.jpg" class="d-block w-100" alt="...">
                     </div>
@@ -61,8 +61,8 @@
             </div>
 
         </section>
-        <section class=" contenedor">
-            <h2>Promos</h2>
+        <section class=" hero contenedor">
+            <h1>Promos</h1>
             <div class="card__promo__contenedor">
                 <div class="card__promo">
                     <div class="card__contenedor__img">
@@ -78,24 +78,24 @@
                 </div>
                 <div class="card__promo">
                     <div class="card__contenedor__img">
-                        <img src="./images/Bariloche.jfif" alt="Previaje" class="card__promo__img">
+                        <img src="./images/ushuaia.jpg" alt="Ushuaia" class="card__promo__img">
                     </div>
                     <div class="card__promo__contenedor__descripcion">
                         <H3 class="card__promo__titulo">Ushuaia y Calafate</H3>
-                        <p class="card__descripcion">3 noches <br>
-                            desde <span>$ 50.000.-</span> <br>
+                        <p class="card__descripcion">6 noches <br>
+                            desde <span>$ 100.000.-</span> <br>
                             base doble</p>
                         <a href="" class="btn">Ver paquete </a>
                     </div>
                 </div>
                 <div class="card__promo">
                     <div class="card__contenedor__img">
-                        <img src="./images/Bariloche.jfif" alt="Previaje" class="card__promo__img">
+                        <img src="./images/pexels-hector-perez-5542897.jpg" alt="Previaje" class="card__promo__img">
                     </div>
                     <div class="card__promo__contenedor__descripcion">
-                        <H3 class="card__promo__titulo">Bariloche</H3>
-                        <p class="card__descripcion">3 noches <br>
-                            desde <span>$ 50000.-</span> <br>
+                        <H3 class="card__promo__titulo">Vuelta al Norte</H3>
+                        <p class="card__descripcion">7 noches <br>
+                            desde <span>$ 150000.-</span> <br>
                             Base doble</p>
                         <a href="" class="btn">Ver paquete </a>
                     </div>
@@ -105,49 +105,50 @@
         <section class="destinos contenedor">
             <H2>Destinos</H2>
             <div class="contenedor__destinos">
-                <div>
-                    <a href="./pages/destinos.html#argentina">
-                        <img src="./images/Argentina-patagonia-canva.png" alt="">
-
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./images/Disney-CANVA.png" alt="">
-
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./images/tailandia-canva.png" alt="">
-
-                    </a>
-                </div>
+                <a href="./pages/destinos.html#argentina" name="argentina" class="destino_argentina">
+                    <h2 class="titulo_destino">Argentina</h2>
+                </a>
+                <a href="./pages/destinos.html#europa" name="europa" class="destino_europa">
+                <h2 class="titulo_destino">Europa</h2>
+                </a>
+                <a href="./pages/destinos.html#eeuu" name="eeuu" class="destino_eeuu">
+                    <h2 class="titulo_destino">Estados Unidos</h2>
+                </a>
+                <a href="./pages/destinos.html#caribe" name="caribe" class="destino_caribe">
+                    <h2 class="titulo_destino">Caribe</h2>
+                </a>
+                
             </div>
 
 
             </div>
         </section>
-        <section class="informacion">
-            <h2>Informacion</h2>
+        <section class="informacion contenedor">
+            <h2>Información</h2>
             <div class="informacion__contenedor">
                 <div>
                     <h3>Info Previaje</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nostrum, reiciendis cupiditate
-                        corporis voluptates officia rerum obcaecati nesciunt distinctio velit placeat repellat sint at
-                        adipisci pariatur cumque architecto quibusdam. Sapiente?</p>
+                    <p>Previaje es un programa de preventa turística que te reintegra el 50% del valor de tu viaje, para viajar y disfrutar de
+                    todos los destinos de Argentina desde el 10 de octubre hasta el 5 de diciembre del 2022.</p>
                 </div>
                 <div>
-                    <h3>Info Documentacion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nemo facere voluptas cumque odio non
-                        eos odit, voluptatem ipsum dolorum tempora amet obcaecati unde eius numquam repellat animi! Eos,
-                        harum?</p>
+                    <h3>Info Documentación</h3>
+                    <p>Estados Partes del MERCOSUR y Estados Asociados (Brasil, Paraguay, Uruguay, Bolivia, Chile, Colombia, Ecuador, Perú,
+                    Venezuela)
+                    
+                    A partir del 1° de noviembre de 2016, sólo serán admitidos para salir del país -según corresponda al destino
+                    seleccionado- los DNI libreta celeste no confeccionados manualmente, los DNI en formato tarjeta (en cualquiera de sus
+                    versiones), y el pasaporte.
+                    
+                    Los DNI de confección manual (DNI tapa verde o bordeaux de personas mayores y de menores de edad, y libreta celeste de
+                    niños y niñas confeccionados manualmente), no serán válidos como documento de viaje para egresar del país.
+                    
+                    .</p>
                 </div>
                 <div>
                     <h3>Antes de viajar</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A cumque ad sint aspernatur ea
-                        consequatur maxime nisi itaque? Cum impedit distinctio dolorum optio obcaecati inventore dicta
-                        illum nisi voluptas saepe.</p>
+                    <p>Las cosas que debes tener en cuenta antes de viajar son: el presupuesto, el destino, el transporte, el alojamiento y las
+                    actividades que quieres realizar.</p>
                 </div>
             </div>
 
@@ -160,7 +161,7 @@
                 <div class="col direccion">
                     <h2>Direccion</h2>
                     <ul>
-                        <li>Direccion: Laprida 767, Lomas de Zamora - Buenos Aires - Argentina </li>
+                        <li> <p class="text-center"> Direccion: Laprida 767, <br> Lomas de Zamora - <br> Buenos Aires - Argentina </p></li>
                         <li>Telefono: +54 911 6632-5741</li>
                         <li>Mail: <a href="mailto:info@taxidevo.tur.ar">info@taxidevo.tur.ar</a></li>
                         <li></li>

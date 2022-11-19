@@ -1,0 +1,28 @@
+/*----header----*/
+.header_site {
+  background-color: #e86e01;
+  position: sticky relative;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  .logo {
+    background-image: url("../images/Logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 05em;
+  }
+  .navbar-brand {
+    display: none;
+    img {
+      height: 150px;
+    }
+  }
+
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #0d1b38;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Baloo 2", cursive;
+  }
+}

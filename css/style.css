@@ -5,10 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Baloo 2', sans-serif;
+  font-family: "Baloo 2", sans-serif;
 }
-
-
 
 img {
   max-width: 100%;
@@ -65,7 +63,7 @@ img {
 
 /*---Main---*/
 .banner {
-  margin: 10 0 30px;
+  margin: 1rem 2rem ;
 }
 .carousel-item {
   height: 200px;
@@ -97,13 +95,14 @@ img {
   align-content: center;
 }
 
-.card__promo__contenedor .card__promo {
+.card__promo {
   display: flex;
-  text-align: center;
+  justify-content: space-around;
+  align-content: center;
   border-radius: 5px;
   border: 1px solid black;
   width: 450px;
-  height: 220px;
+  height: auto;
 }
 
 .card__promo__img {
@@ -112,14 +111,13 @@ img {
 }
 
 .card__promo__img img {
-  width: 225px;
+  width: 100%;
 }
 
 .card__promo__contenedor__descripcion {
   padding: 10px;
   width: 50%;
   height: 100%;
-  overflow: hidden;
 }
 
 .card__descripcion p {
@@ -137,20 +135,70 @@ img {
 }
 
 .destinos h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 20px;
 }
 
-.destinos .contenedor__destinos {
+.contenedor__destinos {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  
 }
 
-.contenedor__destinos div a img {
-  width: 450px;
-  height: 600px;
-  opacity: 0.6;
+.destino_argentina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/Argentina-patagonia.jpg") no-repeat center center;
+  background-size: cover;
 }
+
+.destino_europa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/torre-eifell.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.destino_eeuu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/miami.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.destino_caribe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin: 1rem;
+  text-decoration: none;
+  background: url("../images/cancun.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.destinos .titulo_destino {
+  padding: 0 1rem;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
 
 /*Informacion*/
 
@@ -165,19 +213,22 @@ img {
 
 .informacion h2 {
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .informacion .informacion__contenedor div {
   border: 1px solid black;
-  width: 350px;
-  height: 300px;
-  margin-bottom: 25px;
-  padding: 10px;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 0rem 1rem;
   overflow: hidden;
+  text-align: center;
+  justify-content: center;
 }
 
 .informacion div h3 {
+  font-weight: bold;
   margin: 20px;
 }
 
@@ -198,6 +249,19 @@ img {
   height: auto;
   border-radius: 5px;
 }
+
+/*--Destinos Page--*/
+.imagen_destino{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
 /*--- formulario Contacto---*/
 
 .background_form {
@@ -209,13 +273,12 @@ img {
   padding: 1rem;
   overflow: hidden;
   width: 97%;
-  
 }
 
 .contenedor__formulario {
   width: 50%;
   margin: 2rem 0;
-  padding: 2rem 1rem ;
+  padding: 2rem 1rem;
   background-color: rgb(216, 17, 89, 0.5);
   border-radius: 4px;
   z-index: 1;
@@ -236,21 +299,18 @@ img {
   border: 1px;
 }
 
-
-
 .contenedor__video {
   position: absolute;
   top: 0;
   left: 35px;
-  
 }
-
 
 /*---Footer----*/
 
 .footer_site {
   background-color: #00cecb;
   text-align: center;
+  align-content: center;
   width: 100%;
   margin-top: 10px;
   padding: 20px;
@@ -303,42 +363,41 @@ img {
 
 @media screen and (max-width: 768px) {
   .header_site {
-  background-color: #e86e01;
-  position:  relative;
-  text-align: center;
-  margin-bottom: 10px;
-  width: auto;
-}
-.navbar-brand{
-  display: inline;
-}
-.logo {
- display: none;
-  
-}
+    background-color: #e86e01;
+    position: relative;
+    text-align: center;
 
+    margin-bottom: 10px;
+    width: auto;
+  }
+  .header_site div img {
+    width: 100%;
+    height: auto;
+  }
 
+  .menu {
+    display: none;
+  }
 
+  .card__promo__contenedor {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .card__promo {
+    margin: 5px;
+    width: auto;
+  }
 
-.card__promo__contenedor {
- flex-direction: column;
-
-}
-.card__promo{
-  margin: 5px;
-
-}
-.destinos .contenedor__destinos {
-  
-  flex-direction: column;
- 
-  
-}
-.contenedor__destinos div{
-  margin: 5px;
-}
+  .destinos .contenedor__destinos {
+    flex-direction: column;
+  }
+  .contenedor__destinos div {
+    margin: 5px;
+  }
 
   .informacion__contenedor {
     flex-direction: column;
   }
+
 }
