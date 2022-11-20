@@ -1,13 +1,16 @@
-main{
-    h2{
+/*destinos-- page*/
+
+   .destinos{
+     h2{
         font-size: 4rem;
     }
-}
+   }
+
 .imagen_destino{
     display: flex;
     height: 200px;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
     
     
     img{

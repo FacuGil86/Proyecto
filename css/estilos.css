@@ -218,7 +218,8 @@ img {
   font-size: 3rem;
 }
 
-main h2 {
+/*destinos-- page*/
+.destinos h2 {
   font-size: 4rem;
 }
 
@@ -226,7 +227,7 @@ main h2 {
   display: flex;
   height: 200px;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 .imagen_destino img {
   width: 100%;
