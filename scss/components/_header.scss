@@ -1,6 +1,8 @@
+@import "../base/variables";
+
 /*----header----*/
 .header_site {
-  background-color: #e86e01;
+  background-color: $color-header;
   position: sticky relative;
   text-align: center;
   overflow: hidden;
